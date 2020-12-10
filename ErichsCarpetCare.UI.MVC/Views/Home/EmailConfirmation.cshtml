@@ -1,0 +1,17 @@
+﻿@model ErichsCarpetCare.UI.MVC.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Email Confirmation";
+}
+
+<div class="email-container">
+    <h2>Your message was successfully received</h2>
+    <br/>
+    <h3>I will respond back as soon as possible to <strong>@Model.Email@(".")</strong> Thank you for contacting us!</h3>
+
+
+    <p>
+        @Html.ActionLink("Back to Home", "Index")
+    </p>
+
+</div>
